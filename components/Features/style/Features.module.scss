@@ -1,0 +1,82 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+.features {
+  margin-top: 233px;
+}
+.cardDimension {
+  height: 228px;
+  width: 274px;
+  padding: 0px 12px 0px 12px;
+  position: relative;
+  box-shadow: 0px 50px 501px #d5d5f1;
+}
+.feactures_card {
+  column-gap: 135px;
+  row-gap: 99px;
+  margin-top: 130px;
+  text-align: center;
+}
+.cardImgStyle {
+  position: absolute;
+  top: -60px;
+  left: 61.25px;
+}
+.titleStyle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22px;
+  color: $color-blue;
+  margin: 120px 0px 12px 0px;
+}
+.paraStyle {
+  font-size: 14px;
+  line-height: 12.88px;
+  font-weight: 400;
+  color: $color-gray;
+}
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .feactures_card {
+    row-gap: 110px;
+    column-gap: 56px;
+  }
+}
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .features {
+    margin-top: 130px;
+  }
+  .feactures_card {
+    column-gap: 40px;
+    row-gap: 110px;
+  }
+  .cardDimension {
+    width: 205px;
+    box-shadow: 0px 21px 389px #d5d5f1;
+  }
+  .cardImgStyle {
+    left: 27px;
+  }
+}
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .features {
+    margin-top: 110px;
+  }
+  .cardDimension {
+    width: 234px;
+  }
+  .feactures_card {
+    column-gap: 48px;
+    row-gap: 110px;
+  }
+  .cardImgStyle {
+    left: 41px;
+  }
+}
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  .features {
+    margin-top: 100px;
+  }
+  .feactures_card {
+    margin-top: 110px;
+  }
+}

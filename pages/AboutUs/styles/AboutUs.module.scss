@@ -1,0 +1,338 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+.heroSection {
+  margin-top: 165px;
+  column-gap: 60px;
+}
+.our_vission {
+  margin-top: 74px;
+}
+.headingdText {
+  h2 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 32.28px;
+    color: #040919;
+    margin-bottom: 14px;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.08px;
+    color: #858585;
+    margin-bottom: 64px;
+  }
+}
+
+// strips
+.strips {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-top: 177px;
+}
+
+.stripStyle {
+  background-color: #aa7bea26;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  column-gap: 20px;
+  padding: 44px;
+  border-radius: 8px;
+  p {
+    margin: 0px;
+  }
+}
+.padd {
+  padding-left: 60px;
+}
+
+.stripStyle :first-child {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 22px;
+  color: $color-dark_black;
+}
+.stripStyle :last-child {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.22px;
+  color: $color-dark_black;
+}
+
+// propell service
+.propellService {
+  padding: 68px 99px 51px 99px;
+  margin: auto;
+  margin-top: 320px;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.72px;
+  color: black;
+}
+.propell {
+  width: 1160px;
+  box-shadow: 0px 0px 501px #a0a0f2;
+  position: relative;
+  border-radius: 8px;
+  button {
+    position: absolute;
+    top: -70px;
+    left: 462px;
+    width: 237px;
+    height: 106px;
+    border-radius: 8px;
+    background-color: #6c25cd;
+  }
+}
+// my team
+.myTeam_container {
+  text-align: center;
+  margin-top: 187px;
+  margin: 187px 0px 146px 0px;
+}
+.cards_dis {
+  display: flex;
+  justify-content: center;
+  column-gap: 98px;
+}
+.cardDimension {
+  width: 275px;
+  height: 228px;
+  box-shadow: rgb(58 2 242 / 20%) 0px 8px 24px;
+  position: relative;
+  text-align: center;
+}
+.cardImgStyle {
+  position: absolute;
+  top: -83px;
+  left: 47px;
+}
+.titleStyle {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 146px 0px 0px 0px;
+  color: $color-blue;
+}
+// footer
+.footer {
+  margin-top: 257px;
+}
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .heroSectionText {
+    height: 400px;
+  }
+  .strips {
+    margin-top: 225px;
+  }
+  .cardImgStyle {
+    left: 37px;
+  }
+  .propellService {
+    padding: 55px 70px 40px 70px;
+  }
+}
+.propell {
+  width: 900px;
+  button {
+    left: 331px;
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .heroSection {
+    margin-top: 150px;
+    column-gap: 20px;
+  }
+  .heroSectionText {
+    height: 350px;
+  }
+  .our_vission {
+    margin-top: 50px;
+  }
+  .headingdText {
+    p {
+      margin-bottom: 40px;
+    }
+  }
+  // strips
+  .strips {
+    margin-top: 200px;
+  }
+  .stripStyle {
+    padding: 30px;
+  }
+
+  .propellService {
+    width: 720px;
+    padding: 60px 50px 41px 50px;
+    margin-top: 220px;
+  }
+  .propell {
+    button {
+      left: 241px;
+    }
+  }
+
+  // myteam
+  .myTeam_container {
+    margin: 120px 0px 150px 0px;
+  }
+  .cards_dis {
+    column-gap: 40px;
+  }
+  .cardDimension {
+    width: 200px;
+    height: 210px;
+  }
+  .cardImgStyle {
+    width: 150px;
+    left: 25px;
+  }
+  .titleStyle {
+    margin-top: 125px;
+  }
+  // footer
+  .footer {
+    margin-top: 165px;
+  }
+}
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .heroSection {
+    margin-top: 110px;
+    column-gap: 15px;
+  }
+  .heroSectionText {
+    height: 350px;
+  }
+  .our_vission {
+    margin-top: 40px;
+  }
+  .headingdText {
+    p {
+      margin-bottom: 30px;
+    }
+  }
+  // strips
+  .strips {
+    margin-top: 160px;
+  }
+  .padd {
+    padding-left: 0px;
+  }
+  .stripStyle {
+    padding: 20px;
+  }
+
+  .propellService {
+    padding: 50px 30px 35px 30px;
+    margin-top: 190px;
+  }
+  .propell {
+    width: 540px;
+    button {
+      width: 200px;
+      height: 80px;
+      left: 170px;
+      top: -51px;
+    }
+  }
+
+  // myteam
+  .myTeam_container {
+    margin: 120px 0px 130px 0px;
+  }
+  .cards_dis {
+    column-gap: 40px;
+  }
+  .cardDimension {
+    width: 153px;
+    height: 175px;
+  }
+  .cardImgStyle {
+    width: 100px;
+    left: 26px;
+    top: -55px;
+  }
+  .titleStyle {
+    margin-top: 90px;
+  }
+  // footer
+  .footer {
+    margin-top: 160px;
+  }
+}
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  .heroSection {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .topSpeace {
+    margin-top: 70px;
+  }
+  .HeroSectionImg_1 {
+    margin-top: 50px !important;
+    margin: 50px 0px 100px 0px !important;
+  }
+  .our_vission {
+    margin-top: 40px;
+  }
+  .headingdText {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+  // strips
+  .strips {
+    margin-top: 90px;
+  }
+  .stripStyle {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 15px;
+    padding: 20px;
+  }
+  .padd {
+    padding-left: 0px;
+  }
+
+  .propellService {
+    padding: 50px 30px 35px 30px;
+    margin-top: 170px;
+  }
+  .propell {
+    width: 95%;
+    button {
+      width: 200px;
+      height: 80px;
+      top: -8%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  // my team
+  .myTeam_container {
+    margin: 120px 0px 140px 0px;
+  }
+  .cards_dis {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 140px;
+  }
+  .cardDimension {
+    margin: auto;
+  }
+  .footer {
+    margin-top: 140px;
+  }
+  .bottomSpeace {
+    margin-bottom: 60px !important;
+  }
+}

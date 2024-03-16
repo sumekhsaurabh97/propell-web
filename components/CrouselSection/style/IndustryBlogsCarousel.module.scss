@@ -1,0 +1,158 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+.industry_blogs {
+  margin: 173px 0px 66px 0px;
+}
+.prev .next {
+  width: 30px;
+  height: 30px;
+  border: 2px solid red;
+}
+.box {
+  border-radius: 5px;
+  margin: 8px;
+  max-width: 423px;
+  box-shadow: 0 0 5px #c3a1f0;
+  height: 383px;
+}
+
+.dots::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow {
+  z-index: 8;
+  top: 50%;
+  display: flex;
+  position: relative;
+  .next {
+    position: absolute;
+    right: 25px;
+    top: 150px;
+    cursor: pointer;
+  }
+}
+
+.carouselCards {
+  display: flex;
+  gap: 20px;
+}
+.container {
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card {
+  height: 300px;
+  width: 400px;
+}
+
+.imgBg {
+  position: relative;
+  width: 100%;
+}
+.shadowPossition {
+  position: absolute;
+  top: 0px;
+}
+
+.dateStyle {
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #858585;
+  margin-top: 16px;
+  margin: 12px 0px 14px 0px;
+  padding: 0px 10px 0px 18px;
+}
+.titleStyle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 14px;
+  padding: 0px 10px 0px 18px;
+}
+.paraStyle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 24px;
+  color: $color-gray;
+  padding: 0px 10px 0px 18px;
+}
+.ReadMore {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 14px;
+  color: $color-blue;
+  margin-bottom: 0px;
+  padding: 0px 10px 24px 18px;
+}
+.btnStyle {
+  display: none;
+}
+
+.shadow {
+  background: linear-gradient(to left, rgb(199 174 241), rgba(0, 0, 0, 0));
+
+  background: linear-gradient(to left, #3d3d3d, rgba(0, 0, 0, 0));
+  position: absolute;
+  z-index: 1;
+  height: 385px;
+  right: 0px;
+  top: 7px;
+  width: 276px;
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .industry_blogs {
+    margin: 130px 0px 66px 0px;
+  }
+}
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .industry_blogs {
+    margin: 100px 0px 55px 0px;
+  }
+  .dateStyle {
+    margin-bottom: 8px;
+  }
+  .titleStyle {
+    font-size: 21px;
+  }
+  .paraStyle {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .ReadMore {
+    font-size: 15px;
+  }
+
+  .shadow {
+    width: 100px;
+  }
+}
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  .industry_blogs {
+    margin: 80px 0px 50px 0px;
+  }
+  .dateStyle {
+    margin-bottom: 8px;
+  }
+  .titleStyle {
+    font-size: 21px;
+  }
+  .paraStyle {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .ReadMore {
+    font-size: 15px;
+  }
+  .shadow {
+    width: 85px;
+  }
+}

@@ -1,0 +1,200 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+// fintch-hero-section
+.fintech_heroSection {
+  margin-top: 145px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.cards_dis{
+  justify-content: center;
+  column-gap: 30px;
+}
+.title_marginTop {
+  margin-top: 90px;
+}
+// value Addition
+.section_container {
+  margin: 182px 0px 172px 0px;
+  text-align: center;
+}
+.cardDimension {
+  height: 237px;
+  width: 366px;
+  position: relative;
+  border-radius: 8px;
+  padding: 0px 35px 0px 35px;
+  box-shadow: 0px 50px 501px #d5d5f1;
+  margin-bottom: 215px;
+}
+.cardImgStyle {
+  width: 173px;
+  height: 175px;
+  position: absolute;
+  top: -96px;
+  left: 96px;
+}
+.titleStyle {
+  margin: 119px 0px 0px 0px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 22px;
+  color: $color-dark_black;
+  text-align: center;
+}
+.paraStyle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14.72px;
+  color: $color-dark_gray;
+  margin: 14px 0px 76px 0px;
+  text-align: center;
+}
+.btnStyle {
+  height: 43px;
+  width: 145px;
+  background-color: $color-blue;
+  color: $color-white;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -20px;
+  right: 110px;
+}
+// ready to expand
+.readyToExpand_section {
+  margin-top: 215px;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.readyToExpand_img {
+  margin-top: 40px;
+}
+.cardBtn {
+  display: block;
+  margin: 51px auto 135px auto;
+}
+
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .cardDimension {
+    width: 290px;
+  }
+  .paraStyle {
+    margin-bottom: 29px;
+  }
+  .cardImgStyle {
+    left: 58px;
+  }
+  .btnStyle {
+    right: 75px;
+  }
+}
+@media (min-width: $mobile) and (max-width: $tablet) {
+  // hero section
+  .title_marginTop {
+    margin-top: 40px;
+  }
+  // value addition
+  .section_container {
+    margin: 120px 0px 160px 0px;
+  }
+  .cardDimension {
+    width: 215px;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 120px;
+  }
+  .titleStyle {
+    margin: 104px 0px 0px 0px;
+    font-size: 22px;
+  }
+  .paraStyle {
+    margin: 14px 0px 40px 0px;
+  }
+  .cardImgStyle {
+    left: 21px;
+  }
+  .btnStyle {
+    right: 38px;
+  }
+  // ready to expand
+  .readyToExpand_section {
+    margin-top: 120px;
+  }
+  .cardBtn {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  // hero section
+  .fintech_heroSection {
+    flex-direction: column;
+    margin-top: 111px;
+  }
+  .title_marginTop {
+    margin-top: 35px;
+  }
+  // value addition
+  .section_container {
+    margin: 90px 0px 165px 0px;
+  }
+  .cards_dis {
+    flex-direction: column;
+    row-gap: 175px;
+    justify-content: center;
+  }
+  .cardDimension {
+    margin: auto;
+  }
+  // ready to expand
+  .readyToExpand_section {
+    margin-top: 90px;
+  }
+  .cardBtn {
+    // margin-bottom: 90px;
+    margin: 31px auto 90px auto;
+  }
+}
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  // hero section
+  .fintech_heroSection {
+    flex-direction: column;
+    margin-top: 105px;
+  }
+  .title_marginTop {
+    margin-top: 35px;
+  }
+  // value addition
+  .section_container {
+    margin: 80px 0px 150px 0px;
+  }
+  .cards_dis {
+    flex-direction: column;
+    row-gap: 160px;
+    justify-content: center;
+  }
+  .cardDimension {
+    margin: auto;
+    width: 280px;
+    height: 237px;
+    padding: 0px 10px 0px 10px;
+  }
+  .cardImgStyle {
+    left: 63px;
+  }
+  .paraStyle {
+    margin: 8px 0px 32px 0px;
+  }
+  .btnStyle {
+    right: 68px;
+  }
+  // ready to expand
+  .readyToExpand_section {
+    margin-top: 80px;
+  }
+  .cardBtn {
+    margin: 31px auto 80px auto;
+  }
+}

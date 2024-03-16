@@ -1,0 +1,172 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+// lenders-hero-section
+.fintech_heroSection {
+  margin-top: 145px;
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+.dateStyle_dis_none {
+  // display: none;
+}
+.title_marginTop {
+  margin-top: 90px;
+}
+// lenders-hero-section-lower
+.fintech_heroSectionLower {
+  margin-top: 211px;
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+.tAlign_maxWidth {
+  max-width: 663px;
+  text-align: right;
+}
+.float_r {
+  float: right;
+}
+// value addition
+.section_container {
+  margin: 335px 0px 128px 0px;
+  text-align: center;
+}
+.cards_dis {
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 136px;
+}
+.cardDimension {
+  height: 228px;
+  width: 274px;
+  position: relative;
+  border-radius: 8px;
+  padding: 0px 13px 0px 13px;
+  box-shadow: 0px 50px 501px #d5d5f1;
+  margin-bottom: 134px;
+  text-align: center;
+}
+.cardImgStyle {
+  width: 160px;
+  height: 140px;
+  position: absolute;
+  top: -71px;
+  left: 53px;
+}
+.titleStyle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22.08px;
+  color: $color-blue;
+  margin: 120px 0px 12px 0px;
+}
+.paraStyle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12.88px;
+  color: $color-gray;
+}
+.footer {
+  margin-top: 280px;
+}
+
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .cards_dis {
+    column-gap: 69px;
+  }
+}
+@media (min-width: $mobile) and (max-width: $tablet) {
+  // hero section
+  .title_marginTop {
+    margin-top: 40px;
+  }
+  // hero section lower
+  .fintech_heroSectionLower {
+    margin-top: 150px;
+  }
+  // value addition
+  .section_container {
+    margin-top: 235px;
+  }
+  .footer {
+    margin-top: 180px;
+  }
+}
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  // hero section
+  .fintech_heroSection {
+    flex-direction: column;
+    margin-top: 111px;
+  }
+  .title_marginTop {
+    margin-top: 35px;
+  }
+  // hero section lower
+  .section_container {
+    margin-top: 135px;
+  }
+  .fintech_heroSectionLower {
+    flex-direction: column;
+    margin-top: 111px;
+  }
+  .tAlign_maxWidth {
+    max-width: none;
+    text-align: center;
+  }
+  .float_r {
+    float: none;
+  }
+  // value addition
+  .cardDimension {
+    margin: 0px auto 134px auto;
+  }
+  .cards_dis {
+    column-gap: 40px;
+  }
+  .cardDimension {
+    width: 250px;
+  }
+  .cardImgStyle {
+    left: 45px;
+  }
+  // footer
+  .footer {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  // hero section
+  .fintech_heroSection {
+    flex-direction: column;
+    margin-top: 105px;
+  }
+  .title_marginTop {
+    margin-top: 35px;
+  }
+  // hero-section-lower
+  .section_container {
+    margin-top: 135px;
+  }
+  .fintech_heroSectionLower {
+    flex-direction: column;
+    margin-top: 111px;
+  }
+  .tAlign_maxWidth {
+    max-width: none;
+    text-align: center;
+  }
+  .float_r {
+    float: none;
+  }
+  // value addition
+  .cardDimension {
+    margin: 0px auto 134px auto;
+  }
+  // footer
+  .footer {
+    margin-top: 80px;
+  }
+}

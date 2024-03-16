@@ -1,0 +1,135 @@
+@import "./breakpoints";
+// typograpy
+$font-family-base: "League Spartan", sans-serif !important;
+
+// Main colors
+$color-dark_black: #040919;
+$color-gray: #858585;
+$color-white: #ffffff;
+$color-blue: #6520c2;
+$color-dark_gray: #484848;
+
+
+.container{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+// common class style
+.heroSection_title {
+  font-size: 76px;
+  line-height: 70px;
+  font-weight: 700;
+  color: $color-dark_black;
+  margin: 0px 0px 15px 0px;
+  max-width: 624px;
+}
+.heroSection_para {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-gray;
+  margin-bottom: 23px;
+  max-width: 624px;
+  display: block;
+}
+
+// buttton-class
+.btn-lg {
+  width: 172px;
+  height: 43px;
+  border-radius: 4px;
+  background-color: $color-blue;
+  color: $color-white;
+}
+.btn-m {
+  width: 145px;
+  height: 43px;
+  border-radius: 4px;
+  background-color: $color-blue;
+  color: $color-white;
+}
+
+// section-heading-para
+.section_heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #040919;
+  margin-bottom: 12px;
+}
+.section_title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.56px;
+  color: #858585;
+  margin-bottom: 0px;
+}
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .heroSection_title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 9px;
+  }
+  .heroSection_para {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  // section-heading-para
+}
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .heroSection_title {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .heroSection_para {
+    font-size: 15px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  .heroSection_btn {
+    display: block;
+    margin: auto;
+  }
+  // section-heading-para
+  .section_heading {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+  .section_title {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  .heroSection_title {
+    font-size: 45px;
+    line-height: 49px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .heroSection_para {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .heroSection_btn {
+    display: block;
+    margin: auto;
+  }
+
+  // section-heading-para
+  .section_heading {
+    font-size: 35px;
+    margin-bottom: 8px;
+    line-height: 35px;
+  }
+  .section_title {
+    font-size: 15px;
+  }
+}
+
+.dis_none{
+  display: none;
+}

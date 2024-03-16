@@ -1,0 +1,68 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+.quick_tour {
+  margin-top: 233px;
+}
+.tripVideo {
+  width: 67%;
+  margin: 84px auto 0px auto;
+  iframe {
+    height: 489px;
+    box-shadow: 0px 100px 389px #cacaf4;
+  }
+
+  p {
+    margin-top: 70px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16.56px;
+    color: $color-dark_black;
+    text-align: center;
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .quick_tour {
+    margin-top: 130px;
+  }
+  .tripVideo {
+    width: 85%;
+    iframe {
+      height: 390px;
+    }
+    p {
+      margin-top: 55px;
+    }
+  }
+}
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .quick_tour {
+    margin-top: 90px;
+  }
+  .tripVideo {
+    width: 100%;
+    margin-top: 60px;
+    iframe {
+      height: 330px;
+    }
+    p {
+      margin-top: 40px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  .quick_tour {
+    margin-top: 80px;
+  }
+  .tripVideo {
+    width: 100%;
+    margin-top: 57px;
+    iframe {
+      height: 330px;
+    }
+    p {
+      margin-top: 40px;
+    }
+  }
+}

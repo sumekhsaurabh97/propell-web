@@ -1,0 +1,122 @@
+@import "../../../styles/_variables.scss";
+@import "../../../styles/_breakpoints.scss";
+
+.contactUs {
+  background-color: $color-blue;
+  padding: 64px 0px 64px 0px;
+  p {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48.48px;
+    color: $color-white;
+    margin-bottom: 28px;
+  }
+  span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $color-white;
+  }
+  .contactNo {
+    margin-right: 70px;
+  }
+  button {
+    width: 151px;
+    height: 45px;
+    border-radius: 4px;
+    color: $color-white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .getStart {
+    margin-left: 40px;
+  }
+  .btn {
+    :first-child {
+      border: 1px solid $color-white;
+    }
+    :last-child {
+      background-color: $color-white;
+      color: $color-dark_black;
+    }
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .contactUs {
+    p {
+      font-size: 40px;
+    }
+    button {
+      margin-left: 30px;
+    }
+  }
+}
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .contactUs {
+    padding: 30px 0px 30px 0px;
+    p {
+      margin-bottom: 10px;
+    }
+
+    .contactUs_inner {
+      flex-direction: column;
+    }
+    .contactNo {
+      margin-right: 25px;
+    }
+    .btn {
+      margin: 25px auto 0px auto;
+    }
+    .getStart {
+      margin-left: 70px;
+    }
+  }
+}
+
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .contactUs {
+    padding: 25px 0px 25px 0px;
+    .contactUs_inner {
+      flex-direction: column;
+
+      p {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      .btn {
+        margin: 20px auto 0px auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: $mobile-small) {
+  .contactUs {
+    padding: 25px 0px 25px 0px;
+    .contactUs_inner {
+      flex-direction: column;
+
+      p {
+        line-height: 41px;
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      span {
+        font-size: 16px;
+      }
+      .contactNo {
+        margin-right: 25px;
+      }
+      button {
+        width: 130px;
+      }
+      .btn {
+        margin: 20px auto 0px auto;
+      }
+      .getStart {
+        margin-left: 19px;
+      }
+    }
+  }
+}
