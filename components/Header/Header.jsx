@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from "./style/Header.module.scss";
 
 export default function Header() {
-  const [width, setWidth] = useState("");
+  const [width, setWidth] = useState("0%");
 
   return (
     <>
